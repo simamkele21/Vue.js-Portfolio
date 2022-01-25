@@ -1,0 +1,28 @@
+{
+  "Projects": [
+    {
+      "title": "MOCK PROJECT",
+      "id": 1,
+      "category": "HTML & CSS",
+      "details": "",
+      "github": "url{https://github.com/simamkele21/project}",
+      "live": "url{https://eloquent-babbage-f22814.netlify.app/}"
+    },
+    {
+      "title": "Project Name",
+      "id": 2,
+      "category": "Javascript",
+      "details": "",
+      "github": "url{}",
+      "live": "url{}"
+    },
+    {
+      "title": "Project ",
+      "id": 3,
+      "category": "Vue",
+      "details": "",
+      "github": "url{}",
+      "live": "url{}"
+    }
+  ]
+}
