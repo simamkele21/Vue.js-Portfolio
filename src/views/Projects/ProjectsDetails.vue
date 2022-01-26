@@ -3,12 +3,12 @@
     <h1>{{ Projects.title }}</h1>
     <p>The Project id is {{ id }}</p>
     <h1>{{ Projects.details }}</h1>
+    <h3>{{ Projects.github }}</h3>
+    <h3>{{ Projects.live }}</h3>
   </div>
   <div v-else>
     <p>Loading project data...</p>
   </div>
-  <!-- <h1>Project Details Page</h1>
-  <p>The Project id is {{ $route.param.id }}</p> -->
 </template>
 
 <script>
@@ -20,9 +20,12 @@ export default {
     };
   },
   mounted() {
-    fetch("http://localhost:3000/Projects" + this.id)
+    fetch("http://localhost:3000/Projects/" + this.id)
       .then((res) => res.json())
-      .then((data) => (this.jobs = data))
+      .then((data) => {
+        this.Projects = data;
+        console.log(data);
+      })
       .catch((err) => console.log(err.message));
   },
 };
