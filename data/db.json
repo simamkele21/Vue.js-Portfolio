@@ -84,5 +84,57 @@
       "Name": "Alex Sexwale",
       "title": "Senior Full-stack developer"
     }
+  ],
+  "Resume": [
+    {
+      "id": 1,
+      "year": "2013 - 2018",
+      "institution": "Garlandale High",
+      "role": "Student",
+      "responsibilities": [
+        "attending classes on time and regularly",
+        "being prepared for classes with all necessary supplies",
+        "taking good care of school property",
+        "completing all homework assignments.",
+        "doing their best."
+      ]
+    },
+    {
+      "id": 2,
+      "year": "2019 - 2020",
+      "institution": "Department of Local Government",
+      "role": "Intern",
+      "responsibilities": [
+        "Administration",
+        "reating and maintaining databases",
+        "Stakeholder liaising"
+      ]
+    },
+    {
+      "id": 3,
+      "year": "2020 - 2021",
+      "institution": "iCOLLEGE",
+      "role": "Student",
+      "responsibilities": [
+        "Complete your work tasks as required by your employer digitally",
+        "Have access to recorded and pre-recorded lectures",
+        "Download PoE's, Tasks and Assignments on the App",
+        "Learn from anywhere as long as you have access to a stable internet connection",
+        "Submit your tasks, assignments and PoE's"
+      ]
+    },
+    {
+      "id": 4,
+      "year": "2021 - current",
+      "institution": "Life Choices Academy",
+      "role": "Student",
+      "responsibilities": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
   ]
 }

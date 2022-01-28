@@ -1,5 +1,4 @@
 <template>
-  <h1>About</h1>
   <div class="about">
     <div class="col-lg-5">
       <img
@@ -25,6 +24,25 @@
         rather pursue coding as I have found the coding languages far more
         stimulating.
       </p>
+
+      <MDBRow class="justify-content-around">
+        <MDBCol col="3">
+          <ul>
+            <li>Name: Simamkele January</li>
+            <li>Age: 22 Years</li>
+            <li>Email: Simamkelejanuary@gmail.com</li>
+          </ul>
+        </MDBCol>
+        <MDBCol col="3">
+          <ul>
+            <li>Phone: (+27) 065 518 3107</li>
+            <li>
+              Address: 4365 Ashely Kriel Street, Samora Machel, Cape town. SA
+            </li>
+            <li>Freelance: Available</li>
+          </ul>
+        </MDBCol>
+      </MDBRow>
     </div>
   </div>
 
@@ -96,3 +114,5 @@ export default {
   },
 };
 </script>
+
+<style></style>
