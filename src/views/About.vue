@@ -53,6 +53,7 @@
       :key="Testimonials.id"
       class="Testimonials"
     >
+
       <MDBCard class="mb-3" style="max-width: 540px">
         <MDBRow class="g-0">
           <MDBCol md="4">
@@ -78,6 +79,7 @@
   </div>
 </template>
 <script>
+
 import {
   MDBRow,
   MDBCol,
@@ -98,21 +100,23 @@ export default {
     MDBCardTitle,
     MDBCardText,
   },
-  data() {
-    return {
-      Testimonials: [],
-    };
-  },
-  mounted() {
-    fetch("http://localhost:3000/Testimonials")
-      .then((res) => res.json())
-      .then((data) => {
-        this.Testimonials = data;
-        console.log(data);
-      })
-      .catch((err) => console.log(err.message));
-  },
-};
+
+data() {
+  return {
+    Testimonials: [],
+  };
+},
+mounted() {
+  fetch("http://localhost:3000/Testimonials")
+    .then((res) => res.json())
+    .then((data) => {
+      this.Testimonials = data;
+      console.log(data);
+    })
+    .catch((err) => console.log(err.message));
+},
+}
 </script>
 
-<style></style>
+<style>
+</style>

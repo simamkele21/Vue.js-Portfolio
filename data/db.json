@@ -1,6 +1,7 @@
 {
   "Projects": [
     {
+      "img": "",
       "title": "MOCK PROJECT",
       "id": 1,
       "category": "HTML & CSS",
@@ -128,13 +129,7 @@
       "year": "2021 - current",
       "institution": "Life Choices Academy",
       "role": "Student",
-      "responsibilities": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
+      "responsibilities": ["", "", "", "", ""]
     }
   ]
 }
