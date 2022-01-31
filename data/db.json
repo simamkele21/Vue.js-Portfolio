@@ -1,45 +1,44 @@
 {
   "Projects": [
     {
-      "img": "",
+      "img": "https://i.postimg.cc/ZRWhVvKX/project.png",
       "title": "MOCK PROJECT",
       "id": 1,
       "category": "HTML & CSS",
-      "details": "",
       "github": "https://github.com/simamkele21/project",
       "live": "https://eloquent-babbage-f22814.netlify.app/"
     },
     {
+      "img": "https://i.postimg.cc/9f8hdYVG/onlinestore.png",
       "title": "ONLINE STORE",
       "id": 2,
-      "category": "Javascript",
-      "details": "",
-      "github": "url{}",
-      "live": "url{}"
+      "category": "HTML & CSS",
+      "github": "https://github.com/simamkele21/project",
+      "live": "https://agitated-clarke-7afb9c.netlify.app/"
     },
     {
+      "img": "https://i.postimg.cc/ZY1JsHNH/mediaq.png",
       "title": "MEDIA QUERIES",
       "id": 3,
       "category": "Vue",
-      "details": "",
-      "github": "url{}",
-      "live": "url{}"
+      "github": "https://github.com/simamkele21/Media-Queries",
+      "live": "https://gallant-wright-e119ca.netlify.app/"
     },
     {
-      "title": "",
+      "img": "https://i.postimg.cc/sgJyXRNH/fc.png",
+      "title": "Flipcards",
       "id": 4,
       "category": "Javascript",
-      "details": "",
-      "github": "url{}",
-      "live": "url{}"
+      "github": "https://github.com/simamkele21/flipcards",
+      "live": "https://stoic-shannon-5c2e3b.netlify.app/"
     },
     {
-      "title": "",
+      "img": "https://i.postimg.cc/K4Xp7RR7/boxmodel.png",
+      "title": "Box Model",
       "id": 5,
-      "category": "Vue",
-      "details": "",
-      "github": "url{}",
-      "live": "url{}"
+      "category": "HTML & CSS",
+      "github": "https://github.com/simamkele21/boxmodel",
+      "live": "https://keen-ptolemy-759e53.netlify.app/"
     }
   ],
   "Testimonials": [

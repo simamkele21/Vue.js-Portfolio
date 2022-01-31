@@ -1,32 +1,22 @@
 <template>
   <h1>Projects</h1>
-  <div v-if="Projects.length">
+  <div class="projects" v-if="Projects.length">
     <div v-for="Projects of Projects" :key="Projects.id" class="Project">
-      <!-- <router-link
-        :to="{ name: 'ProjectsDetails', params: { id: Projects.id } }"
-      > -->
-        <!-- <h2></h2>
-        <h2>{{ Projects.category }}</h2>
-        <h2>{{ Projects.details }}</h2>
-        <button>{{ Projects.github }}</button>
-        <h2>{{ Projects.live }}</h2> -->
-        <MDBCard>
-          <a v-mdb-ripple="{ color: 'light' }">
-            <MDBCardImg
-              :src="Projects.img"
-              top
-              alt="..."
-            />
-          </a>
-          <MDBCardBody>
-            <MDBCardTitle>{{ Projects.title }}</MDBCardTitle>
-            <MDBCardText>
-              {{ Projects.details }}
-            </MDBCardText>
-            <MDBBtn tag="a" :href="Projects.github" color="primary">Button</MDBBtn>
-            <MDBBtn tag="a" href="{{ Projects.live }" color="primary">Button</MDBBtn>
-          </MDBCardBody>
-        </MDBCard>
+      <MDBCard class="card">
+        <a v-mdb-ripple="{ color: 'light' }">
+          <MDBCardImg class="img" :src="Projects.img" top alt="..." />
+        </a>
+        <MDBCardBody>
+          <MDBCardTitle>{{ Projects.title }}</MDBCardTitle>
+          <MDBCardText>
+            {{ Projects.details }}
+          </MDBCardText>
+          <MDBBtn tag="a" :href="Projects.github" color="primary"
+            >Github</MDBBtn
+          >
+          <MDBBtn tag="a" :href="Projects.live" color="primary">Live</MDBBtn>
+        </MDBCardBody>
+      </MDBCard>
       <!-- </router-link> -->
     </div>
   </div>
@@ -73,4 +63,19 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+.img {
+  width: 300px;
+  height: 300px;
+}
+</style>

@@ -9,7 +9,6 @@
   <router-view />
 </template>
 
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -32,4 +31,12 @@
   color: #42b983;
 }
 
+img {
+  filter: grayscale(100%);
+  transition: all 0.5s linear;
+}
+
+img:hover {
+  filter: none;
+}
 </style>

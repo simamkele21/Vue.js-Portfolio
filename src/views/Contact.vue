@@ -29,52 +29,6 @@
     <MDBCol col="6">
       <div class="contact-form">
         <form action="https://formspree.io/f/xjvlyvjk" method="POST">
-          <!-- <div class="row clearfix">
-            <div class="form-group col-md-6 col-sm-6 co-xs-12">
-              <input
-                type="text"
-                name="name"
-                value=""
-                placeholder="Name"
-                required
-              />
-            </div>
-            <div class="form-group col-md-6 col-sm-6 co-xs-12">
-              <input
-                type="email"
-                name="email"
-                value=""
-                placeholder="Email"
-                required
-              />
-            </div>
-            <div class="form-group col-md-6 col-sm-6 co-xs-12">
-              <input
-                type="text"
-                name="subject"
-                value=""
-                placeholder="Subject"
-                required
-              />
-            </div>
-            <div class="form-group col-md-6 col-sm-6 co-xs-12">
-              <input
-                type="text"
-                name="phone"
-                value=""
-                placeholder="Phone"
-                required
-              />
-            </div>
-            <div class="form-group col-md-12 col-sm-12 co-xs-12">
-              <textarea name="message" placeholder="Massage"></textarea>
-            </div>
-            <div class="form-group col-md-12 col-sm-12 co-xs-12">
-              <button type="submit" class="theme-btn btn-style-one">
-                Send Now
-              </button>
-            </div>
-          </div> -->
           <div class="half left cf">
             <input type="text" id="input-name" placeholder="Name" />
             <input type="email" id="input-email" placeholder="Email address" />
@@ -170,6 +124,7 @@ form textarea {
     margin-bottom: 0;
   }
 }
+
 /* Clearfix */
 .cf:before,
 .cf:after {
