@@ -9,15 +9,20 @@
         <MDBCardBody>
           <MDBCardTitle>{{ Projects.title }}</MDBCardTitle>
           <MDBCardText>
-            {{ Projects.details }}
+            {{ Projects.category }}
           </MDBCardText>
-          <MDBBtn tag="a" :href="Projects.github" color="primary"
-            >Github</MDBBtn
+          <MDBBtn
+            tag="a"
+            :href="Projects.source"
+            color="primary"
+            target="_blank"
+            >Source</MDBBtn
           >
-          <MDBBtn tag="a" :href="Projects.live" color="primary">Live</MDBBtn>
+          <MDBBtn tag="a" :href="Projects.live" color="primary" target="_blank"
+            >Live</MDBBtn
+          >
         </MDBCardBody>
       </MDBCard>
-      <!-- </router-link> -->
     </div>
   </div>
 

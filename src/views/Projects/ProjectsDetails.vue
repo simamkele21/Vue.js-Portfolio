@@ -4,7 +4,7 @@
     <h1>{{ Projects.title }}</h1>
     <p>The Project id is {{ id }}</p>
     <h1>{{ Projects.details }}</h1>
-    <h3>{{ Projects.github }}</h3>
+    <h3>{{ Projects.source }}</h3>
     <h3>{{ Projects.live }}</h3>
   </div>
   <div v-else>

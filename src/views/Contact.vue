@@ -1,5 +1,5 @@
 <template>
-  <MDBRow>
+  <!-- <MDBRow class="container">
     <MDBCol col="6">
       <div class="sub-heading mb-20">
         <h3>Get In Touch</h3>
@@ -11,17 +11,17 @@
       </p>
       <ul class="contact-info">
         <li class="phone">
-          <span class="title">Phone</span
+          <span class="title">Phone: </span
           ><span class="value">(+27) 065 518 3107</span>
         </li>
         <li class="address">
-          <span class="title">Address</span
+          <span class="title">Address: </span
           ><span class="value">
             4365 Ashely Kriel Street, Samora Machel, Cape town. SA</span
           >
         </li>
         <li class="email">
-          <span class="title">E-mail</span
+          <span class="title">E-mail: </span
           ><span class="value">Simamkelejanuary@gmail.com</span>
         </li>
       </ul>
@@ -46,7 +46,49 @@
         </form>
       </div>
     </MDBCol>
-  </MDBRow>
+  </MDBRow> -->
+  <section></section>
+  <div class="container contact">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="sub-heading mb-20">
+          <h3>Get In Touch</h3>
+        </div>
+        <p>
+          For more information on any of our services or to talk about how we
+          may be able to help you, please get in touch with us using the form
+          below. Or you can call and follow our social media.
+        </p>
+      </div>
+      <div class="col-lg-12">
+        <div class="card mb-4">
+          <h3>Message Me</h3>
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xjvlyvjk" method="POST">
+              <div class="half left cf">
+                <input type="text" id="input-name" placeholder="Name" />
+                <input
+                  type="email"
+                  id="input-email"
+                  placeholder="Email address"
+                />
+                <input type="text" id="input-subject" placeholder="Subject" />
+              </div>
+              <div class="half right cf">
+                <textarea
+                  name="message"
+                  type="text"
+                  id="input-message"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <input type="submit" value="Submit" id="input-submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -61,6 +103,21 @@ export default {
 </script>
 
 <style>
+.contact {
+  /* border: 1px solid; */
+  border-radius: 10px;
+  height: 75vh;
+  padding: 30px;
+}
+.contact-info {
+  margin: 60px auto 100px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
+  grid-gap: 20px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
 form {
   max-width: 600px;
   text-align: center;
@@ -80,7 +137,7 @@ form textarea {
   font-family: "Merriweather", sans-serif;
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(224, 220, 220, 0.1);
   resize: none;
 }
 form input:focus,
