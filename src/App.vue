@@ -1,5 +1,33 @@
 <template>
   <div id="nav">
+    <div id="content">
+      <a href="#" title="Title 1">
+        <span>
+          <i data-feather="home"></i>
+        </span>
+      </a>
+      <a href="#" title="Title 2">
+        <span>
+          <i data-feather="cpu"></i>
+        </span>
+      </a>
+      <a href="#" title="Title 3">
+        <span>
+          <i data-feather="sun"></i>
+        </span>
+      </a>
+      <a href="#" title="Title 4">
+        <span>
+          <i data-feather="settings"></i>
+        </span>
+      </a>
+      <a href="#" title="Title 5">
+        <span>
+          <i data-feather="refresh-ccw"></i>
+        </span>
+      </a>
+    </div>
+
     <router-link to="/">Home</router-link> |
     <router-link :to="{ name: 'About' }">About</router-link> |
     <router-link :to="{ name: 'Education' }">Education</router-link> |
@@ -18,6 +46,7 @@
           class="btn btn-outline-light btn-floating m-1"
           href="https://www.linkedin.com/in/simamkele-january-4252b822b"
           role="button"
+          target="_blank"
           ><i class="fab fa-linkedin-in"></i
         ></a>
 
@@ -26,7 +55,17 @@
           class="btn btn-outline-light btn-floating m-1"
           href="https://github.com/simamkele21"
           role="button"
+          target="_blank"
           ><i class="fab fa-github"></i
+        ></a>
+
+        <!-- Codepen -->
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="https://codepen.io/simamkele21"
+          role="button"
+          target="_blank"
+          ><i class="fab fa-codepen"></i
         ></a>
       </section>
       <!-- Section: Social media -->
@@ -51,19 +90,18 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  /* background-image: url(https://i.postimg.cc/CM848fRZ/photo-1577017040065-650ee4d43339.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white; */
+  background-color: rgb(219, 219, 189);
 }
 
 #nav {
   padding: 30px;
+  background-color: rgb(219, 219, 189);
 }
 
 #nav a {
   font-weight: bold;
   color: #2c3e50;
+  ]background-color: black;
 }
 
 #nav a.router-link-exact-active {
@@ -79,9 +117,9 @@ img:hover {
   filter: none;
 }
 
-.footer {
+/* .footer {
   left: 0;
   right: 0;
   bottom: 0px;
-}
+} */
 </style>

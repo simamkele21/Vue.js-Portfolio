@@ -1,8 +1,14 @@
 <template>
-  <div id="home">
+  <!-- <div id="home">
     <h1>Simamkele January</h1>
     <p>WEB DEVELOPER</p>
-  </div>
+  </div> -->
+  <section id="hero">
+    <div class="hero-wrapper">
+      <h2>Hello, I'm Simamkele January!</h2>
+      <p>Aspiering Developer based in Cape Town</p>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -13,9 +19,35 @@ export default {
 </script>
 
 <style>
-#home {
+/* #home {
   align-content: center;
   padding-top: 15%;
   height: 75.5vh;
+} */
+#hero {
+  background: #f4f7ca url("https://mavisland.github.io/img/hero_image.jpg")
+    center center no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 74.6vh;
+  /* font-family: "Montserrat", sans-serif; */
+  size: 120xp;
+  padding-top: 350px;
+}
+#hero .hero-wrapper {
+  bottom: 40%;
+  font-size: 18px;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 50%;
+  z-index: 3;
+}
+#hero .hero-wrapper h2 {
+  text-transform: uppercase;
 }
 </style>
