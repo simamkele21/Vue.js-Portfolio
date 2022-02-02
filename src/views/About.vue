@@ -1,4 +1,5 @@
 <template>
+<h1>About</h1>
   <div class="container bootstrap snippets bootdey">
     <div class="profile card">
       <div class="profile-body">

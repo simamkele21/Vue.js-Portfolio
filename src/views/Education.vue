@@ -31,7 +31,7 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <h2>My Skills</h2>
+        <h1>My Skills</h1>
         <MDBRow class="Skills" style="max-width: 740px">
           <MDBCol col="6" sm="4"
             ><img
