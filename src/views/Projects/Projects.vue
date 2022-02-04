@@ -118,6 +118,22 @@ export default {
           source: "https://codepen.io/simamkele21/pen/WNOVwjO",
           live: "https://codepen.io/simamkele21/pen/WNOVwjO",
         },
+        {
+          img: "https://i.postimg.cc/4NjRBK20/Screenshot-from-2022-02-04-15-50-09.png",
+          title: "Text effects",
+          id: 9,
+          category: "Javascript",
+          source: "https://codepen.io/simamkele21/pen/WNZyBdp",
+          live: "https://codepen.io/simamkele21/pen/WNZyBdp",
+        },
+        {
+          img: "https://i.postimg.cc/d1Nx3Xzf/Screenshot-from-2022-02-04-15-53-14.png",
+          title: "Pokemon API",
+          id: 10,
+          category: "Javascript",
+          source: "https://codepen.io/simamkele21/pen/eYGKZmy",
+          live: "https://codepen.io/simamkele21/pen/eYGKZmy",
+        },
       ],
     };
   },
@@ -135,14 +151,10 @@ export default {
 
 <style>
 .projects {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  grid-gap: 1rem;
-  padding: 1rem 80px;
-  font-size: 1.2rem;
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .img {
   width: 300px;

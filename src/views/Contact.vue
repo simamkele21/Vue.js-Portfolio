@@ -58,7 +58,7 @@ export default {
 .contact {
   /* border: 1px solid; */
   border-radius: 10px;
-  height: 75vh;
+  min-height: 75vh;
   padding: 30px;
 }
 .contact-info {
@@ -100,7 +100,7 @@ form textarea:focus {
 }
 form #input-submit {
   color: white;
-  background: #e74c3c;
+  background: #42b983;
   cursor: pointer;
 }
 form #input-submit:hover {

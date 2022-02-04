@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-    <div id="content">
+    <!-- <div id="content">
       <a href="#" title="Title 1">
         <span>
           <i data-feather="home"></i>
@@ -26,7 +26,7 @@
           <i data-feather="refresh-ccw"></i>
         </span>
       </a>
-    </div>
+    </div> -->
 
     <router-link to="/">Home</router-link> |
     <router-link :to="{ name: 'About' }">About</router-link> |

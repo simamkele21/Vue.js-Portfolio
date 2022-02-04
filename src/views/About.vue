@@ -226,13 +226,19 @@ li a {
 }
 
 .testimonials {
-  margin: 60px auto 100px;
+  /* margin: 60px auto 100px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(350px, 1fr));
   grid-gap: 20px;
   padding-left: 200px;
   padding-right: 200px;
+  display: grid;
+  grid-template-columns: repeat(3 (auto-fit), 20rem);
+  justify-content: center... + safe | unsafe; */
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-@media screen and (min-width: 100px) and (max-width: 799px) 
+@media screen and (min-width: 100px) and (max-width: 799px);
 </style>

@@ -7,7 +7,7 @@
           <div
             v-for="Resume of Resume"
             :key="Resume.id"
-            class="Resume col-lg-6"
+            class="Resume col-lg-3"
           >
             <ul>
               <li>
@@ -169,20 +169,15 @@ export default {
 </script>
 
 <style>
-.length {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  grid-gap: 10px;
-  /* padding: 1rem 80px; */
-  font-size: 1.2rem;
+.posts-content {
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.container ul {
+.posts-content ul {
   margin: 0;
-  /* margin-top: 100px; */
   list-style: none;
   position: relative;
   padding: 10px;
@@ -190,7 +185,7 @@ export default {
   font-size: 13px;
 }
 
-.container ul li {
+.posts-content ul li {
   position: relative;
   margin-left: 30px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -199,28 +194,11 @@ export default {
   width: 250px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
 }
-/* .container ul li:not(:first-child) {
-  margin-top: 60px;
-} */
 
-/* .container div .title,
-.container div .type {
-  font-weight: 600;
-  font-size: 12px;
-} */
-/* .container div .info {
-  font-weight: 300;
-} */
-.container div > div {
+.posts-content div > div {
   margin-top: 5px;
 }
 
-/* .Skills {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-} */
 .img-fluid {
   width: 300px;
   height: 200px;
