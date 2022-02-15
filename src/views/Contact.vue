@@ -2,39 +2,51 @@
   <h1>Contact</h1>
   <div class="container contact">
     <div class="row">
-      <div class="col-lg-12">
+      <!-- <div class="col-lg-12">
         <div class="sub-heading mb-20">
           <h3>Get In Touch</h3>
         </div>
         <p>
-          For more information on any of our services or to talk about how we
-          may be able to help you, please get in touch with us using the form
-          below. Or you can call and follow our social media.
+          For more information on any of my services or to talk about how I may
+          be able to help you, please get in touch with me using the form below.
+          Or you can call and follow my social media.
         </p>
-      </div>
+      </div> -->
       <div class="col-lg-12">
         <div class="card mb-4">
           <h3>Message Me</h3>
           <div class="contact-form">
-            <form action="https://formspree.io/f/xjvlyvjk" method="POST">
-              <div class="half left cf">
-                <input type="text" id="input-name" placeholder="Name" />
-                <input
-                  type="email"
-                  id="input-email"
-                  placeholder="Email address"
-                />
-                <input type="text" id="input-subject" placeholder="Subject" />
+            <form @submit.prevent="handleSubmit">
+              <label>Name</label>
+              <input
+                type="name"
+                required
+                v-model="name"
+                placeholder="Enter name"
+              />
+              <label>Last Name</label>
+              <input
+                type="surname"
+                required
+                v-model="surname"
+                placeholder="Enter last name"
+              />
+              <label>Email</label>
+              <input
+                type="email"
+                required
+                v-model="email"
+                placeholder="Enter email"
+              />
+              <label>Messege</label>
+              <input
+                type="message"
+                v-model="message"
+                placeholder="Enter message"
+              />
+              <div class="submit">
+                <button>Submit</button>
               </div>
-              <div class="half right cf">
-                <textarea
-                  name="message"
-                  type="text"
-                  id="input-message"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-              <input type="submit" value="Submit" id="input-submit" />
             </form>
           </div>
         </div>
@@ -51,6 +63,34 @@ export default {
     MDBCol,
     MDBRow,
   },
+  data() {
+    return {
+      name: "",
+      surname: "",
+      email: "",
+      message: "",
+    };
+  },
+  methods: {
+    handleSubmit() {
+      console.log(this.name, this.surname, this.email, this.message);
+      fetch("http://localhost:3000/contact", {
+        method: "POST",
+        body: JSON.stringify({
+          name: this.name,
+          surname: this.surname,
+          email: this.email,
+          message: this.message,
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      })
+        .then((response) => response.json())
+        .then((json) => alert(json.msg))
+        .catch((e) => alert(e.msg));
+    },
+  },
 };
 </script>
 
@@ -60,6 +100,7 @@ export default {
   border-radius: 10px;
   min-height: 75vh;
   padding: 30px;
+  align-content: center;
 }
 .contact-info {
   margin: 60px auto 100px;
@@ -71,47 +112,31 @@ export default {
 }
 
 form {
-  max-width: 600px;
-  text-align: center;
-  margin: 20px auto;
+  max-width: 420px;
+  margin: 30px auto;
+  background: white;
+  text-align: left;
+  padding: 40px;
+  border-radius: 10px;
 }
-form input,
-form textarea {
-  border: 0;
-  outline: 0;
-  padding: 1em;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
+label {
+  color: #aaa;
+  display: inline-block;
+  margin: 25px 0 15px;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+input {
   display: block;
-  width: 100%;
-  margin-top: 1em;
-  font-family: "Merriweather", sans-serif;
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 1px rgba(224, 220, 220, 0.1);
-  resize: none;
+  padding: 10px 6px;
+  width: 50%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  color: #555;
 }
-form input:focus,
-form textarea:focus {
-  -moz-box-shadow: 0 0px 2px #e74c3c !important;
-  -webkit-box-shadow: 0 0px 2px #e74c3c !important;
-  box-shadow: 0 0px 2px #e74c3c !important;
-}
-form #input-submit {
-  color: white;
-  background: #42b983;
-  cursor: pointer;
-}
-form #input-submit:hover {
-  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
-  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
-  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
-}
-form textarea {
-  height: 126px;
-}
-
 .half {
   float: left;
   width: 48%;
@@ -145,5 +170,17 @@ form textarea {
 
 .cf:after {
   clear: both;
+}
+
+button {
+  background: #42b983;
+  border: 0;
+  padding: 10px 20px;
+  margin-top: 20px;
+  color: #white;
+  border-radius: 20px;
+}
+.submit {
+  text-align: center;
 }
 </style>

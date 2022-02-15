@@ -13,15 +13,15 @@
               />
             </div>
             <div class="col-md-7">
-              <h2>Simamkele January</h2>
+              <h2>Web Developer</h2>
               <hr />
               <p>
-                I enjoy being part of a progressive initiative where, if not
-                all, a majority of participants benefit. I'm always ready to
-                move out of my comfort zone, not only to learn but also to push
-                my limits both physically and mentally. Although people see me
-                as an extroverted person who is easy to communicate with, I see
-                myself as an ambivert.
+                Hello I'm Simamkele January, I enjoy being part of a progressive
+                initiative where, if not all, a majority of participants
+                benefit. I'm always ready to move out of my comfort zone, not
+                only to learn but also to push my limits both physically and
+                mentally. Although people see me as an extroverted person who is
+                easy to communicate with, I see myself as an ambivert.
               </p>
               <p>
                 My interest in web development started when I was a student in
@@ -37,10 +37,7 @@
                 </tr>
                 <tr>
                   <th>Age: 22 Years</th>
-                  <th>
-                    Address: 4365 Ashely Kriel Street,<br />
-                    Samora Machel, Cape town. SA
-                  </th>
+                  <th>Address: Cape Town. SA<br /></th>
                 </tr>
               </table>
             </div>
@@ -58,7 +55,7 @@
       :key="Testimonials.id"
       class="Testimonials"
     >
-      <MDBCard class="mb-3 card" style="max-width: 540px">
+      <!-- <MDBCard class="mb-3 card" style="max-width: 540px">
         <MDBRow class="g-0">
           <MDBCol md="3">
             <MDBCardImg class="pic" :src="Testimonials.img" alt="..." />
@@ -75,7 +72,23 @@
             </MDBCardBody>
           </MDBCol>
         </MDBRow>
-      </MDBCard>
+      </MDBCard> -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              :src="Testimonials.img"
+              alt="Avatar"
+              style="width: 300px; height: 300px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>{{ Testimonials.Name }}</h1>
+            <p>{{ Testimonials.title }}</p>
+            <p>{{ Testimonials.Description }}</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div v-else>
@@ -83,87 +96,86 @@
   </div>
 </template>
 <script>
-import {
-  MDBRow,
-  MDBCol,
-  MDBCard,
-  MDBCardImg,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-} from "mdb-vue-ui-kit";
+import // MDBRow,
+// MDBCol,
+// MDBCard,
+// MDBCardImg,
+// MDBCardBody,
+// MDBCardTitle,
+// MDBCardText,
+"mdb-vue-ui-kit";
 
 export default {
   components: {
-    MDBRow,
-    MDBCol,
-    MDBCard,
-    MDBCardImg,
-    MDBCardBody,
-    MDBCardTitle,
-    MDBCardText,
+    // MDBRow,
+    // MDBCol,
+    // MDBCard,
+    // MDBCardImg,
+    // MDBCardBody,
+    // MDBCardTitle,
+    // MDBCardText,
   },
 
   data() {
     return {
       Testimonials: [
-        {
-          Description:
-            "He is a humble,kind and caring person who always does what is right, very dedicated to what he does and always trys to help others. Simamkele easly addapts to new situations and thinks quickly on his feet.To add to that he does not shy away from hard work and always puts his best foot foward",
-          id: 1,
-          img: "https://i.postimg.cc/kMQFYYXf/Na-aim1.jpg",
-          Name: "Na-aim Fredericks",
-          title: "Colleague",
-        },
-        {
-          Description:
-            "Simamkele is a hardworking person who always seeks help when stuck whick makes him a goal-driven person.",
-          id: 2,
-          img: "https://i.postimg.cc/kXBTDFyC/lilitha.jpg",
-          Name: "Lilitha Ngele",
-          title: "Colleague",
-        },
-        {
-          Description:
-            "Great humor and great person to work with. Always has a smile on his face and always works hard to finish the task at hand.",
-          id: 3,
-          img: "https://i.postimg.cc/9f73THtW/Muneeb3.jpg",
-          Name: "Mogamat Muneeb Davids",
-          title: "Colleague",
-        },
-        {
-          Description:
-            "Simamkele, the little man with big ideas. A very determined individual. You can always count on him to deliver good work. You Won't regret working with him!",
-          id: 4,
-          img: "https://i.postimg.cc/VNcgGyPs/Tursha.png",
-          Name: "Tursha Arendse",
-          title: "Colleague",
-        },
-        {
-          Description:
-            "Simamkele is a personable and easy to work with. He would be a valuable addition to your any coding team due to his personality.",
-          id: 5,
-          img: "https://i.postimg.cc/pdTrtrHs/Godwin.jpg",
-          Name: "Godwin Dzapatsva",
-          title: "Head of Curriculum and Learning",
-        },
-        {
-          Description:
-            "Simamkele is a bright individual. He analyses and continously finds ways to improve on himself and his technical abilities.",
-          id: 6,
-          img: "https://i.postimg.cc/Y2m49vmV/Alex.jpg",
-          Name: "Alex Sexwale",
-          title: "Senior Full-stack developer",
-        },
+        // {
+        //   Description:
+        //     "He is a humble,kind and caring person who always does what is right, very dedicated to what he does and always trys to help others. Simamkele easly addapts to new situations and thinks quickly on his feet.To add to that he does not shy away from hard work and always puts his best foot foward",
+        //   id: 1,
+        //   img: "https://i.postimg.cc/kMQFYYXf/Na-aim1.jpg",
+        //   Name: "Na-aim Fredericks",
+        //   title: "Colleague",
+        // },
+        // {
+        //   Description:
+        //     "Simamkele is a hardworking person who always seeks help when stuck whick makes him a goal-driven person.",
+        //   id: 2,
+        //   img: "https://i.postimg.cc/kXBTDFyC/lilitha.jpg",
+        //   Name: "Lilitha Ngele",
+        //   title: "Colleague",
+        // },
+        // {
+        //   Description:
+        //     "Great humor and great person to work with. Always has a smile on his face and always works hard to finish the task at hand.",
+        //   id: 3,
+        //   img: "https://i.postimg.cc/9f73THtW/Muneeb3.jpg",
+        //   Name: "Mogamat Muneeb Davids",
+        //   title: "Colleague",
+        // },
+        // {
+        //   Description:
+        //     "Simamkele, the little man with big ideas. A very determined individual. You can always count on him to deliver good work. You Won't regret working with him!",
+        //   id: 4,
+        //   img: "https://i.postimg.cc/VNcgGyPs/Tursha.png",
+        //   Name: "Tursha Arendse",
+        //   title: "Colleague",
+        // },
+        // {
+        //   Description:
+        //     "Simamkele is a personable and easy to work with. He would be a valuable addition to your any coding team due to his personality.",
+        //   id: 5,
+        //   img: "https://i.postimg.cc/pdTrtrHs/Godwin.jpg",
+        //   Name: "Godwin Dzapatsva",
+        //   title: "Head of Curriculum and Learning",
+        // },
+        // {
+        //   Description:
+        //     "Simamkele is a bright individual. He analyses and continously finds ways to improve on himself and his technical abilities.",
+        //   id: 6,
+        //   img: "https://i.postimg.cc/Y2m49vmV/Alex.jpg",
+        //   Name: "Alex Sexwale",
+        //   title: "Senior Full-stack developer",
+        // },
       ],
     };
   },
   mounted() {
-    fetch("http://localhost:3000/Testimonials")
+    fetch("https:backend-sima.herokuapp.com/Testimonials")
       .then((res) => res.json())
       .then((data) => {
         this.Testimonials = data;
-        console.log(data);
+        console.log(Testimonials);
       })
       .catch((err) => console.log(err.message));
   },
@@ -226,19 +238,56 @@ li a {
 }
 
 .testimonials {
-  /* margin: 60px auto 100px;
-  display: grid;
-  grid-gap: 20px;
-  padding-left: 200px;
-  padding-right: 200px;
-  display: grid;
-  grid-template-columns: repeat(3 (auto-fit), 20rem);
-  justify-content: center... + safe | unsafe; */
   display: flex;
   gap: 30px;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding-bottom: 15px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 355px;
+  height: 355px;
+  perspective: 1000px;
 }
 
+.flip-card-inner {
+  position: relative;
+  width: 350px;
+  height: 355px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  object-fit: cover;
+  padding-top: 22px;
+}
+
+.flip-card-back {
+  background-color: rgb(219, 219, 189);
+  color: white;
+  transform: rotateY(180deg);
+}
+img {
+  object-fit: cover;
+}
 @media screen and (min-width: 100px) and (max-width: 799px);
 </style>

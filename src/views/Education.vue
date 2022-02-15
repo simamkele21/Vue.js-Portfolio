@@ -1,29 +1,26 @@
 <template>
   <div class="container posts-content">
     <div class="row">
-      <div class="col-lg-6 Resume">
+      <div class="col-lg-6">
         <h1>Resume</h1>
         <div v-if="Resume.length" class="length">
           <div
             v-for="Resume of Resume"
             :key="Resume.id"
-            class="Resume col-lg-3"
+            class="Resume"
           >
-            <ul>
-              <li>
-                <span></span>
-                <div>
-                  <div class="title">{{ Resume.institution }}</div>
-                  {{ Resume.year }}
-                  <div class="info">{{ Resume.role }}</div>
-                  <div class="type">
-                    <div v-for="responsibility of Resume.responsibilities">
+            <div class="card bg-light">
+              <div class="card-header">{{ Resume.year }}</div>
+              <div class="card-body">
+                <h5 class="card-title">{{ Resume.institution }}</h5>
+                <p>{{ Resume.role }}</p>
+                <p class="card-text">
+                  <div v-for="responsibility of Resume.responsibilities">
                       {{ responsibility }}
                     </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div v-else>
@@ -112,82 +109,90 @@ export default {
   data() {
     return {
       Resume: [
-        {
-          id: 1,
-          year: "2013 - 2018",
-          institution: "Garlandale High",
-          role: "Student",
-          responsibilities: [
-            "attending classes on time and regularly",
-            "being prepared for classes with all necessary supplies",
-            "taking good care of school property",
-            "completing all homework assignments.",
-            "doing their best.",
-          ],
-        },
-        {
-          id: 2,
-          year: "2019 - 2020",
-          institution: "Department of Local Government",
-          role: "Intern",
-          responsibilities: [
-            "Administration",
-            "reating and maintaining databases",
-            "Stakeholder liaising",
-          ],
-        },
-        {
-          id: 3,
-          year: "2020 - 2021",
-          institution: "iCOLLEGE",
-          role: "Student",
-          responsibilities: [
-            "Complete your work tasks as required by your employer digitally",
-            "Have access to recorded and pre-recorded lectures",
-            "Download PoE's, Tasks and Assignments on the App",
-            "Learn from anywhere as long as you have access to a stable internet connection",
-            "Submit your tasks, assignments and PoE's",
-          ],
-        },
-        {
-          id: 4,
-          year: "2021 - current",
-          institution: "Life Choices Academy",
-          role: "Student",
-          responsibilities: ["", "", "", "", ""],
-        },
+        // {
+        //   id: 1,
+        //   year: "2013 - 2018",
+        //   institution: "Garlandale High",
+        //   role: "Student",
+        //   responsibilities: [
+        //     "attending classes on time and regularly",
+        //     "being prepared for classes with all necessary supplies",
+        //     "taking good care of school property",
+        //     "completing all homework assignments.",
+        //     "doing their best.",
+        //   ],
+        // },
+        // {
+        //   id: 2,
+        //   year: "2019 - 2020",
+        //   institution: "Department of Local Government",
+        //   role: "Intern",
+        //   responsibilities: [
+        //     "Administration",
+        //     "reating and maintaining databases",
+        //     "Stakeholder liaising",
+        //   ],
+        // },
+        // {
+        //   id: 3,
+        //   year: "2020 - 2021",
+        //   institution: "iCOLLEGE",
+        //   role: "Student",
+        //   responsibilities: [
+        //     "Complete your work tasks as required by your employer digitally",
+        //     "Have access to recorded and pre-recorded lectures",
+        //     "Download PoE's, Tasks and Assignments on the App",
+        //     "Learn from anywhere as long as you have access to a stable internet connection",
+        //     "Submit your tasks, assignments and PoE's",
+        //   ],
+        // },
+        // {
+        //   id: 4,
+        //   year: "2021 - current",
+        //   institution: "Life Choices Academy",
+        //   role: "Student",
+        //   responsibilities: ["", "", "", "", ""],
+        // },
       ],
     };
   },
   mounted() {
-    fetch("http://localhost:3000/Resume")
+    fetch("https://backend-sima.herokuapp.com/Resume")
       .then((res) => res.json())
-      .then((data) => (this.Resume = data))
+      .then((data) => {
+        this.Resume = data;
+        console.log(Resume);
+      })
       .catch((err) => console.log(err.message));
   },
 };
 </script>
 
 <style>
-.posts-content {
+
+/* .posts-content {
   display: flex;
   gap: 30px;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-direction: row;
+} */
+.length{
+  width: 700px;
 }
-
-.posts-content ul {
+.Resume  {
   margin: 0;
   list-style: none;
   position: relative;
-  padding: 10px;
+  padding: 15px;
   color: rgb(3, 3, 3);
   font-size: 13px;
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .posts-content ul li {
   position: relative;
-  margin-left: 30px;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 14px;
   border-radius: 6px;
@@ -203,8 +208,12 @@ export default {
   width: 300px;
   height: 200px;
   border: 1px solid;
-  padding: 50px;
+  padding: 10px;
   margin: 1%;
   border-radius: 10px;
+}
+.img-fluid {
+  filter: grayscale(100%);
+  transition: all 0.5s linear;
 }
 </style>

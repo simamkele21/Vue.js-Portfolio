@@ -6,7 +6,7 @@
   <section id="hero">
     <div class="hero-wrapper">
       <h2>Hello, I'm Simamkele January!</h2>
-      <p>Aspiering Developer based in Cape Town</p>
+      <p>Aspiring Developer based in Cape Town</p>
     </div>
   </section>
 </template>
