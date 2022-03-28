@@ -1,55 +1,32 @@
 <template>
   <h1>Contact</h1>
   <div class="container contact">
-    <div class="row">
-      <!-- <div class="col-lg-12">
-        <div class="sub-heading mb-20">
-          <h3>Get In Touch</h3>
-        </div>
-        <p>
-          For more information on any of my services or to talk about how I may
-          be able to help you, please get in touch with me using the form below.
-          Or you can call and follow my social media.
-        </p>
-      </div> -->
-      <div class="col-lg-12">
-        <div class="card mb-4">
-          <h3>Message Me</h3>
-          <div class="contact-form">
-            <form @submit.prevent="handleSubmit">
-              <label>Name</label>
-              <input
-                type="name"
-                required
-                v-model="name"
-                placeholder="Enter name"
-              />
-              <label>Last Name</label>
-              <input
-                type="surname"
-                required
-                v-model="surname"
-                placeholder="Enter last name"
-              />
-              <label>Email</label>
-              <input
-                type="email"
-                required
-                v-model="email"
-                placeholder="Enter email"
-              />
-              <label>Messege</label>
-              <input
-                type="message"
-                v-model="message"
-                placeholder="Enter message"
-              />
-              <div class="submit">
-                <button>Submit</button>
-              </div>
-            </form>
+    <div class="card mb-4">
+      <h3>Message Me</h3>
+      <div class="contact-form">
+        <form @submit.prevent="handleSubmit">
+          <label>Name</label>
+          <input type="name" required v-model="name" placeholder="Enter name" />
+          <label>Last Name</label>
+          <input
+            type="surname"
+            required
+            v-model="surname"
+            placeholder="Enter last name"
+          />
+          <label>Email</label>
+          <input
+            type="email"
+            required
+            v-model="email"
+            placeholder="Enter email"
+          />
+          <label>Messege</label>
+          <input type="message" v-model="message" placeholder="Enter message" />
+          <div class="submit">
+            <button>Submit</button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>
@@ -96,7 +73,6 @@ export default {
 
 <style>
 .contact {
-  /* border: 1px solid; */
   border-radius: 10px;
   min-height: 75vh;
   padding: 30px;

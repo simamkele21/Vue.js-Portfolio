@@ -30,16 +30,33 @@
                 languages far more stimulating.
               </p>
 
-              <table style="width: 100%">
-                <tr>
-                  <th>Phone: (+27) 065 518 3107</th>
-                  <th>Email: Simamkelejanuary@gmail.com</th>
-                </tr>
-                <tr>
-                  <th>Age: 22 Years</th>
-                  <th>Address: Cape Town. SA<br /></th>
-                </tr>
-              </table>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Birthday:</strong> <span>25 December 1999</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Email:</strong>
+                      <span>Simamkelejanuary@gmail.com</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Phone:</strong> <span>(+27) 065 518 3107</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>City:</strong> <span>Cape Town, SA</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -55,24 +72,6 @@
       :key="Testimonials.id"
       class="Testimonials"
     >
-      <!-- <MDBCard class="mb-3 card" style="max-width: 540px">
-        <MDBRow class="g-0">
-          <MDBCol md="3">
-            <MDBCardImg class="pic" :src="Testimonials.img" alt="..." />
-          </MDBCol>
-          <MDBCol md="9">
-            <MDBCardBody style="height: 440px">
-              <MDBCardTitle>
-                <h3>{{ Testimonials.Name }}</h3>
-                <h3>{{ Testimonials.title }}</h3>
-              </MDBCardTitle>
-              <MDBCardText>
-                {{ Testimonials.Description }}
-              </MDBCardText>
-            </MDBCardBody>
-          </MDBCol>
-        </MDBRow>
-      </MDBCard> -->
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
@@ -96,26 +95,7 @@
   </div>
 </template>
 <script>
-import // MDBRow,
-// MDBCol,
-// MDBCard,
-// MDBCardImg,
-// MDBCardBody,
-// MDBCardTitle,
-// MDBCardText,
-"mdb-vue-ui-kit";
-
 export default {
-  components: {
-    // MDBRow,
-    // MDBCol,
-    // MDBCard,
-    // MDBCardImg,
-    // MDBCardBody,
-    // MDBCardTitle,
-    // MDBCardText,
-  },
-
   data() {
     return {
       Testimonials: [
@@ -235,6 +215,11 @@ p,
 li,
 li a {
   color: #555;
+}
+
+ul,
+li {
+  list-style-type: none;
 }
 
 .testimonials {
