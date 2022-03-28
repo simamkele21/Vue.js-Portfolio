@@ -1,5 +1,4 @@
 <template>
-  <div class="container posts-content">
     <div class="row">
       <div class="col-lg-6">
         <h1>Resume</h1>
@@ -94,7 +93,6 @@
         </MDBRow>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -126,14 +124,11 @@ export default {
 
 <style>
 
-/* .posts-content {
-  display: flex;
-  gap: 30px;
-  justify-content: space-evenly;
-  flex-direction: row;
-} */
 .length{
   width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: auto;
 }
 .Resume  {
   margin: 0;
@@ -147,18 +142,6 @@ export default {
   flex-wrap: wrap;
 }
 
-.posts-content ul li {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 14px;
-  border-radius: 6px;
-  width: 250px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
-}
-
-.posts-content div > div {
-  margin-top: 5px;
-}
 
 .img-fluid {
   width: 300px;

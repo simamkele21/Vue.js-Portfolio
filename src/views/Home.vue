@@ -30,8 +30,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  height: 74.6vh;
-  /* font-family: "Montserrat", sans-serif; */
+  height: 85.2vh;
   size: 120xp;
   padding-top: 350px;
 }

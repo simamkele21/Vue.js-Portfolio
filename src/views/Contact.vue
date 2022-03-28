@@ -1,32 +1,74 @@
 <template>
   <h1>Contact</h1>
-  <div class="container contact">
-    <div class="card mb-4">
-      <h3>Message Me</h3>
-      <div class="contact-form">
-        <form @submit.prevent="handleSubmit">
-          <label>Name</label>
-          <input type="name" required v-model="name" placeholder="Enter name" />
-          <label>Last Name</label>
-          <input
-            type="surname"
-            required
-            v-model="surname"
-            placeholder="Enter last name"
-          />
-          <label>Email</label>
-          <input
-            type="email"
-            required
-            v-model="email"
-            placeholder="Enter email"
-          />
-          <label>Messege</label>
-          <input type="message" v-model="message" placeholder="Enter message" />
-          <div class="submit">
-            <button>Submit</button>
-          </div>
-        </form>
+
+  <div class="sim">
+    <div class="row">
+      <div class="col-md-5 text-center">
+        <div id="details">
+          <h1>GET IN TOUCH</h1>
+          <p>Cape Town South Africa</p>
+          <p>simamkelejanuary@gmail.com</p>
+          <p>065-518-3107</p>
+          <a
+            class="btn btn-outline-dark btn-floating m-1"
+            href="https://www.linkedin.com/in/simamkele-january-4252b822b"
+            role="button"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+
+          <a
+            class="btn btn-outline-dark btn-floating m-1"
+            href="https://github.com/simamkele21"
+            role="button"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+
+          <a
+            class="btn btn-outline-dark btn-floating m-1"
+            href="https://codepen.io/simamkele21"
+            role="button"
+            target="_blank"
+            ><i class="fab fa-codepen"></i
+          ></a>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="contact-form">
+          <form @submit.prevent="handleSubmit">
+            <label>Name</label>
+            <input
+              type="name"
+              required
+              v-model="name"
+              placeholder="Enter name"
+            />
+            <label>Last Name</label>
+            <input
+              type="surname"
+              required
+              v-model="surname"
+              placeholder="Enter last name"
+            />
+            <label>Email</label>
+            <input
+              type="email"
+              required
+              v-model="email"
+              placeholder="Enter email"
+            />
+            <label>Messege</label>
+            <input
+              type="message"
+              v-model="message"
+              placeholder="Enter message"
+            />
+            <div class="submit">
+              <button>Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -72,6 +114,16 @@ export default {
 </script>
 
 <style>
+.sim {
+  height: 78.9vh;
+}
+#details {
+  height: 0;
+  overflow: none;
+  padding-bottom: 22.25%;
+  margin-top: 190px;
+  position: relative;
+}
 .contact {
   border-radius: 10px;
   min-height: 75vh;
@@ -90,10 +142,11 @@ export default {
 form {
   max-width: 420px;
   margin: 30px auto;
-  background: white;
+  background: rgba(151, 135, 135, 0.2);
   text-align: left;
   padding: 40px;
   border-radius: 10px;
+  font-size: 20px;
 }
 label {
   color: #aaa;
@@ -107,7 +160,7 @@ label {
 input {
   display: block;
   padding: 10px 6px;
-  width: 50%;
+  width: 100%;
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid #ddd;
