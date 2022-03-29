@@ -155,4 +155,22 @@ export default {
   filter: grayscale(100%);
   transition: all 0.5s linear;
 }
+@media (max-width: 480px) {
+.length{
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+.img-fluid {
+  filter: grayscale(30%);
+  transition: all 0.5s linear;
+  max-width: 200px;
+}
+.col-6{
+  flex: 0 0 auto;
+  width: 100%;
+}
+}
+
 </style>
