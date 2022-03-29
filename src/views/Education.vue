@@ -160,7 +160,7 @@ export default {
   width: 400px;
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
+  overflow-x: none;
   }
 .img-fluid {
   filter: grayscale(30%);
