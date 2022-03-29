@@ -160,8 +160,7 @@ export default {
   width: 400px;
   display: flex;
   flex-wrap: wrap;
-  padding: 25px;
-}
+  }
 .img-fluid {
   filter: grayscale(30%);
   transition: all 0.5s linear;
