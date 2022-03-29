@@ -155,7 +155,7 @@ export default {
   filter: grayscale(100%);
   transition: all 0.5s linear;
 }
-@media (max-width: 480px) {
+@media (max-width: 580px) {
 .length{
   width: 400px;
   display: flex;
