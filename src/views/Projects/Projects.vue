@@ -71,6 +71,7 @@ export default {
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-bottom: 15px;
+  margin: 15px 108.5px;
 }
 .img {
   width: 300px;

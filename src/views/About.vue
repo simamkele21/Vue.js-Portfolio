@@ -2,7 +2,7 @@
   <section>
     <h1>About</h1>
     <div class="container bootstrap snippets bootdey">
-      <div class="profile card">
+      <div class="profile">
         <div class="profile-body">
           <div class="profile-bio">
             <div class="row">
@@ -13,7 +13,7 @@
                   alt=""
                 />
               </div>
-              <div class="col-md-7">
+              <div class="col-md-7 bio">
                 <h2>Web Developer</h2>
                 <hr />
                 <p>
@@ -117,6 +117,16 @@ export default {
 </script>
 
 <style>
+.container {
+  max-width: 1580px;
+  height: 500px;
+}
+.bio {
+  text-align: left;
+}
+h2 {
+  align-content: center;
+}
 .card {
   -moz-border-radius: 2%;
   -webkit-border-radius: 2%;
@@ -178,10 +188,11 @@ li {
 
 .testimonials {
   display: flex;
-  gap: 30px;
+  gap: 10px;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding-bottom: 15px;
+  padding: 15px 0px;
+  margin: 0px 100px;
 }
 .flip-card {
   background-color: transparent;

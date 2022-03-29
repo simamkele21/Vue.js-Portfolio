@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-6 text">
         <h1>Resume</h1>
         <div v-if="Resume.length" class="length">
           <div
@@ -26,7 +26,7 @@
           <p>Loading Projects...</p>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 text">
         <h1>My Skills</h1>
         <MDBRow class="Skills" style="max-width: 740px">
           <MDBCol col="6" sm="4"
@@ -123,18 +123,21 @@ export default {
 </script>
 
 <style>
-
+.text{
+  height: 84vh;
+  overflow-x: hidden;
+}
 .length{
   width: 700px;
   display: flex;
   flex-wrap: wrap;
-  padding: auto;
+  margin-left: 125px
 }
 .Resume  {
   margin: 0;
   list-style: none;
   position: relative;
-  padding: 15px;
+  padding: 10px;
   color: rgb(3, 3, 3);
   font-size: 13px;
   width: 350px;
