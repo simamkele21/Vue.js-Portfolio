@@ -157,7 +157,7 @@ export default {
 }
 @media (max-width: 580px) {
 .length{
-  width: 400px;
+  width: 350px;
   display: flex;
   flex-wrap: wrap;
   overflow-x: none;
