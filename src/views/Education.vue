@@ -164,16 +164,19 @@ export default {
   display: flex;
   flex-wrap: wrap;
   overflow-x: none;
+    margin-left: 25px
+
   }
 .img-fluid {
   filter: grayscale(30%);
   transition: all 0.5s linear;
   max-width: 200px;
 }
-.col-6{
-  flex: 0 0 auto;
-  width: 100%;
+
+.row{
+  display : flex;
 }
 }
+
 
 </style>

@@ -166,11 +166,11 @@ input {
   border-bottom: 1px solid #ddd;
   color: #555;
 }
-.half {
+/* .half {
   float: left;
   width: 48%;
   margin-bottom: 1em;
-}
+} */
 
 .right {
   width: 50%;
@@ -179,15 +179,6 @@ input {
 .left {
   margin-right: 2%;
 }
-
-@media (max-width: 480px) {
-  .half {
-    width: 100%;
-    float: none;
-    margin-bottom: 0;
-  }
-}
-
 /* Clearfix */
 .cf:before,
 .cf:after {
@@ -211,5 +202,13 @@ button {
 }
 .submit {
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  /* .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  } */
 }
 </style>
