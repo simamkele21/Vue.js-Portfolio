@@ -12,8 +12,8 @@
                 alt=""
               />
             </div>
-            <div class="col-md-7">
-              <h2>Web Developer</h2>
+            <div class="col-md-7 bio">
+              <h2 class="title">Web Developer</h2>
               <hr />
               <p>
                 Hello I'm Simamkele January, I enjoy being part of a progressive
@@ -119,55 +119,7 @@ export default {
   data() {
     return {
       Testimonials: [
-        // {
-        //   Description:
-        //     "He is a humble,kind and caring person who always does what is right, very dedicated to what he does and always trys to help others. Simamkele easly addapts to new situations and thinks quickly on his feet.To add to that he does not shy away from hard work and always puts his best foot foward",
-        //   id: 1,
-        //   img: "https://i.postimg.cc/kMQFYYXf/Na-aim1.jpg",
-        //   Name: "Na-aim Fredericks",
-        //   title: "Colleague",
-        // },
-        // {
-        //   Description:
-        //     "Simamkele is a hardworking person who always seeks help when stuck whick makes him a goal-driven person.",
-        //   id: 2,
-        //   img: "https://i.postimg.cc/kXBTDFyC/lilitha.jpg",
-        //   Name: "Lilitha Ngele",
-        //   title: "Colleague",
-        // },
-        // {
-        //   Description:
-        //     "Great humor and great person to work with. Always has a smile on his face and always works hard to finish the task at hand.",
-        //   id: 3,
-        //   img: "https://i.postimg.cc/9f73THtW/Muneeb3.jpg",
-        //   Name: "Mogamat Muneeb Davids",
-        //   title: "Colleague",
-        // },
-        // {
-        //   Description:
-        //     "Simamkele, the little man with big ideas. A very determined individual. You can always count on him to deliver good work. You Won't regret working with him!",
-        //   id: 4,
-        //   img: "https://i.postimg.cc/VNcgGyPs/Tursha.png",
-        //   Name: "Tursha Arendse",
-        //   title: "Colleague",
-        // },
-        // {
-        //   Description:
-        //     "Simamkele is a personable and easy to work with. He would be a valuable addition to your any coding team due to his personality.",
-        //   id: 5,
-        //   img: "https://i.postimg.cc/pdTrtrHs/Godwin.jpg",
-        //   Name: "Godwin Dzapatsva",
-        //   title: "Head of Curriculum and Learning",
-        // },
-        // {
-        //   Description:
-        //     "Simamkele is a bright individual. He analyses and continously finds ways to improve on himself and his technical abilities.",
-        //   id: 6,
-        //   img: "https://i.postimg.cc/Y2m49vmV/Alex.jpg",
-        //   Name: "Alex Sexwale",
-        //   title: "Senior Full-stack developer",
-        // },
-      ],
+        ],
     };
   },
   mounted() {
@@ -188,6 +140,12 @@ export default {
   -webkit-border-radius: 2%;
   border-radius: 2%;
   box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.08);
+}
+.bio {
+  text-align: left;
+}
+title {
+  text-align: center;
 }
 
 .profile .profile-body {
@@ -239,10 +197,11 @@ li a {
 
 .testimonials {
   display: flex;
-  gap: 30px;
+  gap: 10px;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding-bottom: 15px;
+  padding: 15px 0px;
+  margin: 0px 100px;
 }
 .flip-card {
   background-color: transparent;
@@ -289,5 +248,4 @@ li a {
 img {
   object-fit: cover;
 }
-@media screen and (min-width: 100px) and (max-width: 799px);
 </style>

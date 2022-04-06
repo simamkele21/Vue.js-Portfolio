@@ -1,8 +1,8 @@
 <template>
   <h1>Contact</h1>
-  <div class="container contact">
+  <!-- <div class="container contact">
     <div class="row">
-      <!-- <div class="col-lg-12">
+      <div class="col-lg-12">
         <div class="sub-heading mb-20">
           <h3>Get In Touch</h3>
         </div>
@@ -11,7 +11,7 @@
           be able to help you, please get in touch with me using the form below.
           Or you can call and follow my social media.
         </p>
-      </div> -->
+      </div>
       <div class="col-lg-12">
         <div class="card mb-4">
           <h3>Message Me</h3>
@@ -52,8 +52,57 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+  <div class="container">
+      <div class="row">
+        <div class="col-md-5 text-center">
+          <div id="details">
+            <h1>CONTACT US</h1>
+            <p>Cape Town South Africa</p>
+            <p>simamkelejanuary@gmail.com</p>
+            <p>065-518-3107</p>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="contact-form">
+            <form @submit.prevent="handleSubmit">
+              <label>Name</label>
+              <input
+                type="name"
+                required
+                v-model="name"
+                placeholder="Enter name"
+              />
+              <label>Last Name</label>
+              <input
+                type="surname"
+                required
+                v-model="surname"
+                placeholder="Enter last name"
+              />
+              <label>Email</label>
+              <input
+                type="email"
+                required
+                v-model="email"
+                placeholder="Enter email"
+              />
+              <label>Messege</label>
+              <input
+                type="message"
+                v-model="message"
+                placeholder="Enter message"
+              />
+              <div class="submit">
+                <button>Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 </template>
+
 
 <script>
 import { MDBCol, MDBRow } from "mdb-vue-ui-kit";
@@ -131,7 +180,7 @@ label {
 input {
   display: block;
   padding: 10px 6px;
-  width: 50%;
+  width: 100%;
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid #ddd;
@@ -152,11 +201,7 @@ input {
 }
 
 @media (max-width: 480px) {
-  .half {
-    width: 100%;
-    float: none;
-    margin-bottom: 0;
-  }
+
 }
 
 /* Clearfix */
@@ -177,7 +222,7 @@ button {
   border: 0;
   padding: 10px 20px;
   margin-top: 20px;
-  color: #white;
+  color: white;
   border-radius: 20px;
 }
 .submit {
