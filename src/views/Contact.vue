@@ -144,8 +144,17 @@ export default {
 </script>
 
 <style>
+.sim {
+  height: 78.9vh;
+}
+#details {
+  height: 0;
+  overflow: none;
+  padding-bottom: 22.25%;
+  margin-top: 190px;
+  position: relative;
+}
 .contact {
-  /* border: 1px solid; */
   border-radius: 10px;
   min-height: 75vh;
   padding: 30px;
@@ -163,10 +172,11 @@ export default {
 form {
   max-width: 420px;
   margin: 30px auto;
-  background: white;
+  background: rgba(151, 135, 135, 0.2);
   text-align: left;
   padding: 40px;
   border-radius: 10px;
+  font-size: 20px;
 }
 label {
   color: #aaa;
@@ -186,11 +196,11 @@ input {
   border-bottom: 1px solid #ddd;
   color: #555;
 }
-.half {
+/* .half {
   float: left;
   width: 48%;
   margin-bottom: 1em;
-}
+} */
 
 .right {
   width: 50%;
@@ -227,5 +237,13 @@ button {
 }
 .submit {
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  /* .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  } */
 }
 </style>

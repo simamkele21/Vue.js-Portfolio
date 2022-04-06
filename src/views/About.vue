@@ -1,15 +1,86 @@
 <template>
-  <h1>About</h1>
-  <div class="container bootstrap snippets bootdey">
-    <div class="profile card">
-      <div class="profile-body">
-        <div class="profile-bio">
-          <div class="row">
-            <div class="col-md-5 text-center">
+  <section>
+    <h1>About</h1>
+    <div class="container bootstrap snippets bootdey">
+      <div class="profile">
+        <div class="profile-body">
+          <div class="profile-bio">
+            <div class="row">
+              <div class="col-md-5 text-center">
+                <img
+                  class="img-thumbnail md-margin-bottom-10"
+                  src="https://i.postimg.cc/d36fX1Nw/image-removebg-preview.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-7 bio">
+                <h2>Web Developer</h2>
+                <hr />
+                <p>
+                  Hello I'm Simamkele January, I enjoy being part of a
+                  progressive initiative where, if not all, a majority of
+                  participants benefit. I'm always ready to move out of my
+                  comfort zone, not only to learn but also to push my limits
+                  both physically and mentally. Although people see me as an
+                  extroverted person who is easy to communicate with, I see
+                  myself as an ambivert.
+                </p>
+                <p>
+                  My interest in web development started when I was a student in
+                  high school. Then, after High School I started studying IT but
+                  decided to rather pursue coding as I have found the coding
+                  languages far more stimulating.
+                </p>
+
+                <div class="row">
+                  <div class="col-lg-6">
+                    <ul>
+                      <li>
+                        <i class="bi bi-chevron-right"></i>
+                        <strong>Birthday:</strong> <span>25 December 1999</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-chevron-right"></i>
+                        <strong>Email:</strong>
+                        <span>Simamkelejanuary@gmail.com</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <ul>
+                      <li>
+                        <i class="bi bi-chevron-right"></i>
+                        <strong>Phone:</strong> <span>(+27) 65 518 3107</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-chevron-right"></i>
+                        <strong>City:</strong> <span>Cape Town, SA</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <h1>Testimonials</h1>
+    <div class="testimonials" v-if="Testimonials.length">
+      <div
+        v-for="Testimonials of Testimonials"
+        :key="Testimonials.id"
+        class="Testimonials"
+      >
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
               <img
-                class="img-thumbnail md-margin-bottom-10"
-                src="https://i.postimg.cc/d36fX1Nw/image-removebg-preview.png"
-                alt=""
+                :src="Testimonials.img"
+                alt="Avatar"
+                style="width: 300px; height: 300px"
               />
             </div>
             <div class="col-md-7 bio">
@@ -45,77 +116,13 @@
         </div>
       </div>
     </div>
-  </div>
-  <br />
-
-  <h1>Testimonials</h1>
-  <div class="testimonials" v-if="Testimonials.length">
-    <div
-      v-for="Testimonials of Testimonials"
-      :key="Testimonials.id"
-      class="Testimonials"
-    >
-      <!-- <MDBCard class="mb-3 card" style="max-width: 540px">
-        <MDBRow class="g-0">
-          <MDBCol md="3">
-            <MDBCardImg class="pic" :src="Testimonials.img" alt="..." />
-          </MDBCol>
-          <MDBCol md="9">
-            <MDBCardBody style="height: 440px">
-              <MDBCardTitle>
-                <h3>{{ Testimonials.Name }}</h3>
-                <h3>{{ Testimonials.title }}</h3>
-              </MDBCardTitle>
-              <MDBCardText>
-                {{ Testimonials.Description }}
-              </MDBCardText>
-            </MDBCardBody>
-          </MDBCol>
-        </MDBRow>
-      </MDBCard> -->
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img
-              :src="Testimonials.img"
-              alt="Avatar"
-              style="width: 300px; height: 300px"
-            />
-          </div>
-          <div class="flip-card-back">
-            <h1>{{ Testimonials.Name }}</h1>
-            <p>{{ Testimonials.title }}</p>
-            <p>{{ Testimonials.Description }}</p>
-          </div>
-        </div>
-      </div>
+    <div v-else>
+      <p>Loading Testimonials...</p>
     </div>
-  </div>
-  <div v-else>
-    <p>Loading Testimonials...</p>
-  </div>
+  </section>
 </template>
 <script>
-import // MDBRow,
-// MDBCol,
-// MDBCard,
-// MDBCardImg,
-// MDBCardBody,
-// MDBCardTitle,
-// MDBCardText,
-"mdb-vue-ui-kit";
-
 export default {
-  components: {
-    // MDBRow,
-    // MDBCol,
-    // MDBCard,
-    // MDBCardImg,
-    // MDBCardBody,
-    // MDBCardTitle,
-    // MDBCardText,
-  },
-
   data() {
     return {
       Testimonials: [
@@ -135,6 +142,16 @@ export default {
 </script>
 
 <style>
+.container {
+  max-width: 1580px;
+  height: 500px;
+}
+.bio {
+  text-align: left;
+}
+h2 {
+  align-content: center;
+}
 .card {
   -moz-border-radius: 2%;
   -webkit-border-radius: 2%;
@@ -193,6 +210,11 @@ p,
 li,
 li a {
   color: #555;
+}
+
+ul,
+li {
+  list-style-type: none;
 }
 
 .testimonials {
