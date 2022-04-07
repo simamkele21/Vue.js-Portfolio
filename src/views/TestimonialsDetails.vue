@@ -4,6 +4,8 @@
     <h1>{{ Testimonials.img }}</h1>
     <h3>{{ Testimonials.Name }}</h3>
     <h3>{{ Testimonials.title }}</h3>
+    <h3>{{ Testimonials.Description }}</h3>
+
   </div>
   <div v-else>
     <p>Loading Testimonials data...</p>

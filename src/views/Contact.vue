@@ -53,7 +53,7 @@
       </div>
     </div>
   </div> -->
-  <div class="container">
+  <div class="container sim">
       <div class="row">
         <div class="col-md-5 text-center">
           <div id="details">
@@ -145,7 +145,7 @@ export default {
 
 <style>
 .sim {
-  height: 78.9vh;
+  height: 76.9vh;
 }
 #details {
   height: 0;
@@ -210,10 +210,6 @@ input {
   margin-right: 2%;
 }
 
-@media (max-width: 480px) {
-
-}
-
 /* Clearfix */
 .cf:before,
 .cf:after {
@@ -239,11 +235,9 @@ button {
   text-align: center;
 }
 
-@media (max-width: 480px) {
-  /* .half {
-    width: 100%;
-    float: none;
-    margin-bottom: 0;
-  } */
+@media (max-width: 580px) {
+.sim{
+height:137.9;
+}
 }
 </style>
