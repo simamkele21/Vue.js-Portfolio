@@ -119,7 +119,7 @@
         </div>
           <div v-else>
       <p>Loading Testimonials...</p>
-    </div> -->
+    </div>
                         
 <!-- <div class="container testimonials" v-if="Testimonials.length">
     <div class="row"   v-for="Testimonials of Testimonials"
@@ -161,12 +161,14 @@ export default {
 </script>
 
 <style>
-.container {
-  max-width: 1580px;
-  height: 500px;
-}
-.bio {
-  text-align: left;
+/* .container {
+  max-width: 1270px;
+  height: 430px;
+} */
+.col-md-7.bio {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+    margin-top: 5px;
 }
 h2 {
   align-content: center;
@@ -242,53 +244,8 @@ li {
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 15px 0px;
-  margin: 0px 100px;
-}
-/* .flip-card {
-  background-color: transparent;
-  width: 355px;
-  height: 355px;
-  perspective: 1000px;
 }
 
-.flip-card-inner {
-  position: relative;
-  width: 350px;
-  height: 355px;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-  object-fit: cover;
-  padding-top: 22px;
-}
-
-.flip-card-back {
-  background-color: rgb(219, 219, 189);
-  color: white;
-  transform: rotateY(180deg);
-}
-img {
-  object-fit: cover;
-} */
 
 #testimonials{
     display: flex;
@@ -317,12 +274,11 @@ img {
 .testimonial-box-container{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     width:100%;
 }
 .testimonial-box{
-    width:500px;
+    width:390px;
     box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
     background-color: #ffffff;
     padding: 20px;

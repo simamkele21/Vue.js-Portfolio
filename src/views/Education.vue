@@ -26,7 +26,7 @@
           <p>Loading Projects...</p>
         </div>
       </div>
-      <div class="col-lg-6 text">
+      <div class="col-lg-6">
         <h1>My Skills</h1>
         <MDBRow class="Skills" style="max-width: 740px">
           <MDBCol col="6" sm="4"
@@ -123,15 +123,12 @@ export default {
 </script>
 
 <style>
-.text{
-  height: 84vh;
-  overflow-x: hidden;
-}
 .length{
   width: 700px;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 125px
+  margin-left: 20px;
+  /* margin-left: 105px */
 }
 .Resume  {
   margin: 0;
@@ -147,12 +144,13 @@ export default {
 
 
 .img-fluid {
-  width: 300px;
-  height: 200px;
+  width: 200px;
+  height: 170px;
   border: 1px solid;
-  padding: 10px;
+  padding: 5px;
   margin: 1%;
   border-radius: 10px;
+  
 }
 .img-fluid {
   filter: grayscale(100%);

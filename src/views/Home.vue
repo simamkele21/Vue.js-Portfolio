@@ -6,7 +6,7 @@
   <section id="hero">
     <div class="hero-wrapper">
       <h2>Hello, I'm Simamkele January!</h2>
-      <p>Aspiring Developer based in Cape Town</p>
+      <p>Aspiring Fullstack Developer based in Cape Town</p>
     </div>
   </section>
 </template>
@@ -30,7 +30,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  height: 85.2vh;
+  height: 81vh;
   size: 120xp;
   padding-top: 350px;
 }

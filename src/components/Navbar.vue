@@ -17,7 +17,7 @@
 #nav a {
   font-weight: bold;
   color: #2c3e50;
-  background-color: rgb(219, 219, 189);
+  background-color: transparent;
 }
 
 #nav a.router-link-exact-active {
