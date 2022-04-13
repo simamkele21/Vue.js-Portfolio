@@ -1,21 +1,5 @@
 <template>
-  <!-- <div class="container contact">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="sub-heading mb-20">
-          <h3>Get In Touch</h3>
-        </div>
-        <p>
-          For more information on any of my services or to talk about how I may
-          be able to help you, please get in touch with me using the form below.
-          Or you can call and follow my social media.
-        </p>
-      </div>
-      <div class="col-lg-12">
-        <div class="card mb-4">
-          <h3>Message Me</h3>
-          <div class="contact-form">
-            <form @submit.prevent="handleSubmit">
+  <!--<form @submit.prevent="handleSubmit">
               <label>Name</label>
               <input
                 type="name"
@@ -47,11 +31,7 @@
                 <button>Submit</button>
               </div>
             </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
+ -->
   <div class="container sim">
       <div class="row">
         <div class="col-md-5 text-center">
@@ -63,11 +43,11 @@
           </div>
         </div>
         <div class="col-md-7">
-          <form id="form" class="topBefore">
-		  <input id="name" type="text" placeholder="NAME">
-      		  <input id="surname" type="text" placeholder="LAST NAME">
-		  <input id="email" type="text" placeholder="E-MAIL">
-		  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+          <form id="form" class="topBefore" @submit.prevent="handleSubmit">
+		  <input id="name" type="text" v-model="name" placeholder="NAME" required>
+      		  <input id="surname" type="text" v-model="surname" placeholder="LAST NAME" required>
+		  <input id="email" type="email" v-model="email" placeholder="E-MAIL" required>
+		  <textarea id="message" type="message" v-model="message" placeholder="MESSAGE" required></textarea>
   <input id="submit" type="submit" value="GO!">
 </form>
           <!-- <div class="contact-form">
@@ -130,7 +110,7 @@ export default {
   methods: {
     handleSubmit() {
       console.log(this.name, this.surname, this.email, this.message);
-      fetch("http://localhost:3000/contact", {
+      fetch("hhttps://backend-sima.herokuapp.com/Contact", {
         method: "POST",
         body: JSON.stringify({
           name: this.name,
@@ -143,8 +123,12 @@ export default {
         },
       })
         .then((response) => response.json())
-        .then((json) => alert(json.msg))
+        .then((json) => {
+          console.log(json);
+          alert(json.msg)
+          })
         .catch((e) => alert(e.msg));
+        
     },
   },
 };
