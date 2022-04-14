@@ -40,6 +40,29 @@
             <p>Cape Town South Africa</p>
             <p>simamkelejanuary@gmail.com</p>
             <p>065-518-3107</p>
+             <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="https://www.linkedin.com/in/simamkele-january-4252b822b"
+          role="button"
+          target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="https://github.com/simamkele21"
+          role="button"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="https://codepen.io/simamkele21"
+          role="button"
+          target="_blank"
+          ><i class="fab fa-codepen"></i
+        ></a>
           </div>
         </div>
         <div class="col-md-7">
@@ -110,7 +133,7 @@ export default {
   methods: {
     handleSubmit() {
       console.log(this.name, this.surname, this.email, this.message);
-      fetch("hhttps://backend-sima.herokuapp.com/Contact", {
+      fetch("https://backend-sima.herokuapp.com/Contact", {
         method: "POST",
         body: JSON.stringify({
           name: this.name,
@@ -144,6 +167,9 @@ export default {
   padding-bottom: 22.25%;
   margin-top: 190px;
   position: relative;
+}
+.btn{
+  color: #726659;
 }
 .col-md-5 {
     flex: 0 0 auto;
@@ -319,84 +345,5 @@ textarea:hover {
       margin-top: 85px;
   }
 }
-
-
-/* .contact {
-  border-radius: 10px;
-  min-height: 75vh;
-  padding: 30px;
-  align-content: center;
-}
-.contact-info {
-  margin: 60px auto 100px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(350px, 1fr));
-  grid-gap: 20px;
-  padding-left: 200px;
-  padding-right: 200px;
-}
-
-form {
-  max-width: 420px;
-  margin: 30px auto;
-  background: rgba(151, 135, 135, 0.2);
-  text-align: left;
-  padding: 40px;
-  border-radius: 10px;
-  font-size: 20px;
-}
-label {
-  color: #aaa;
-  display: inline-block;
-  margin: 25px 0 15px;
-  font-size: 0.6em;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-}
-input {
-  display: block;
-  padding: 10px 6px;
-  width: 100%;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 1px solid #ddd;
-  color: #555;
-}
-
-.right {
-  width: 50%;
-}
-
-.left {
-  margin-right: 2%;
-}
-
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table;
-}
-
-.cf:after {
-  clear: both;
-}
-
-button {
-  background: #42b983;
-  border: 0;
-  padding: 10px 20px;
-  margin-top: 20px;
-  color: white;
-  border-radius: 20px;
-}
-.submit {
-  text-align: center;
-}
-
-@media (max-width: 580px) {
-.sim{
-height:137.9;
-} */
 
 </style>
