@@ -149,7 +149,7 @@ export default {
     };
   },
   mounted() {
-    fetch("https:backend-sima.herokuapp.com/Testimonials")
+    fetch("https://backend-sima.herokuapp.com/Testimonials")
       .then((res) => res.json())
       .then((data) => {
         this.Testimonials = data;
