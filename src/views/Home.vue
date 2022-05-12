@@ -30,7 +30,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  height: 81vh;
+  height: 85.3vh;
   size: 120xp;
   padding-top: 350px;
 }

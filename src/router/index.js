@@ -4,7 +4,8 @@ import About from "../views/About.vue";
 import Projects from "../views/Projects/Projects.vue";
 import Education from "../views/Education.vue";
 import ProjectsDetails from "../views/Projects/ProjectsDetails.vue";
-import TestimonialsDetails from "../views/TestimonialsDetails.vue";
+import Testimonials from "../views/Testimonials/Testimonials.vue";
+import TestimonialsDetails from "../views/Testimonials/TestimonialsDetails.vue";
 import Contact from "../views/Contact.vue";
 
 const routes = [
@@ -33,6 +34,11 @@ const routes = [
     name: "ProjectsDetails",
     component: ProjectsDetails,
     props: true,
+  },
+  {
+    path: "/Testimonials",
+    name: "Testimonials",
+    component: Testimonials,
   },
   {
     path: "/Testimonials/:id",

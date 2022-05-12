@@ -4,6 +4,7 @@
     <router-link :to="{ name: 'About' }">About</router-link> |
     <router-link :to="{ name: 'Education' }">Education</router-link> |
     <router-link :to="{ name: 'Projects' }">Projects</router-link> |
+    <router-link :to="{ name: 'Testimonials' }">Testimonials</router-link> |
     <router-link :to="{ name: 'Contact' }">Contact</router-link>
   </nav>
 </template>
