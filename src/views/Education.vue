@@ -16,7 +16,7 @@
                 <p class="card-text">
                   <div v-for="responsibility of Resume.responsibilities">
                       {{ responsibility }}
-                    </div>
+                  </div>
                 </p>
               </div>
             </div>
