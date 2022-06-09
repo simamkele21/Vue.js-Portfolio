@@ -123,6 +123,12 @@ export default {
 </script>
 
 <style>
+.row{
+
+/*   
+  padding-top: 30px;
+  padding-bottom: 30px; */
+}
 .length{
   width: 700px;
   display: flex;
@@ -172,7 +178,7 @@ export default {
 }
 
 .row{
-  display : flex;
+  display : flex
 }
 }
 
