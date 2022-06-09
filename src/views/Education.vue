@@ -2,7 +2,7 @@
     <div class="row">
       <div class="col-lg-6 text">
         <h1>Resume</h1>
-        <div v-if="Resume.length" class="length">
+        <div v-if="Resume.length">
           <div
             v-for="Resume of Resume"
             :key="Resume.id"
@@ -16,7 +16,7 @@
                 <p class="card-text">
                   <div v-for="responsibility of Resume.responsibilities">
                       {{ responsibility }}
-                    </div>
+                   </div>
                 </p>
               </div>
             </div>

@@ -74,10 +74,11 @@
 </script>
 
 <style>
-/* .container {
+.container {
   max-width: 1270px;
   height: 430px;
-} */
+  padding-top: 3%;
+}
 .col-md-7.bio {
     flex: 0 0 auto;
     width: 58.33333333%;
